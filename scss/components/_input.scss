@@ -1,0 +1,80 @@
+input[type="text"]::-webkit-input-placeholder {
+    color: rgba($color-heading, 0.5)
+}
+
+input[type="text"]::-ms-input-placeholder {
+    color: rgba($color-heading, 0.5)
+}
+
+input[type="text"]::placeholder {
+    color: rgba($color-heading, 0.5)
+}
+
+.form-group {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    .form-control {
+        width: 100%;
+        padding: 17px 20px;
+        border-radius: 50px;
+        border: solid 1px $color-border;
+        outline: none;
+        font-size: 18px;
+        resize: none;
+    }
+    textarea.form-control {
+        border-radius: 25px;
+    }
+    h6 {
+        font-size: $font-family-body;
+    }
+}
+
+.form-group {
+    .radio-control {
+        position: absolute;
+        left: -9999px;
+        &+label {
+            position: relative;
+            padding-left: 34px;
+            cursor: pointer;
+            line-height: 26px;
+            display: inline-block;
+            color: $color-heading;
+            margin-top: 10px;
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+            &:before {
+                left: 0;
+                width: 24px;
+                height: 24px;
+                border: 1px solid $color-border;
+                border-radius: 100%;
+                background: $color-white;
+            }
+            &:after {
+                width: 20px;
+                height: 20px;
+                background: $color-secondery;
+                left: 3px;
+                border-radius: 100%;
+                @include transition(all 0.2s ease);
+                opacity: 0;
+                -webkit-transform: scale(0) translateY(-50%);
+                transform: scale(0) translateY(-50%);
+            }
+        }
+        &:checked+label:after {
+            opacity: 1;
+            -webkit-transform: scale(1) translateY(-50%);
+            transform: scale(1) translateY(-50%);
+        }
+    }
+}

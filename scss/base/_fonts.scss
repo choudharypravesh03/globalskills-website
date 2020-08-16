@@ -1,0 +1,57 @@
+$filePath: "../../";
+
+@font-face {
+	font-family: "product-bold";
+	src: url($filePath+"app/fonts/product-sans-bold.eot");
+	/* IE9 Compat Modes */
+	src: url($filePath+"app/fonts/product-sans-bold.woff2") format("woff2"),
+		/* Super Modern Browsers */
+		url($filePath+"app/fonts/product-sans-bold.woff") format("woff"),
+		/* Pretty Modern Browsers */
+		url($filePath+"app/fonts/product-sans-bold.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url($filePath+"app/fonts/product-sans-bold.svg") format("svg");
+	/* Legacy iOS */
+}
+
+@font-face {
+	font-family: "product-medium";
+	src: url($filePath+"app/fonts/product-sans-medium.eot");
+	/* IE9 Compat Modes */
+	src: url($filePath+"app/fonts/product-sans-medium.woff2") format("woff2"),
+		/* Super Modern Browsers */
+		url($filePath+"app/fonts/product-sans-medium.woff") format("woff"),
+		/* Pretty Modern Browsers */
+		url($filePath+"app/fonts/product-sans-medium.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url($filePath+"app/fonts/product-sans-medium.svg") format("svg");
+	/* Legacy iOS */
+}
+
+@font-face {
+	font-family: "product-regular";
+	src: url($filePath+"app/fonts/product-sans-regular.eot");
+	/* IE9 Compat Modes */
+	src: url($filePath+"app/fonts/product-sans-regular.woff2") format("woff2"),
+		/* Super Modern Browsers */
+		url($filePath+"app/fonts/product-sans-regular.woff") format("woff"),
+		/* Pretty Modern Browsers */
+		url($filePath+"app/fonts/product-sans-regular.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url($filePath+"app/fonts/product-sans-regular.svg") format("svg");
+	/* Legacy iOS */
+}
+
+@font-face {
+	font-family: "product-light";
+	src: url($filePath+"app/fonts/product-sans-light.eot");
+	/* IE9 Compat Modes */
+	src: url($filePath+"app/fonts/product-sans-light.woff2") format("woff2"),
+		/* Super Modern Browsers */
+		url($filePath+"app/fonts/product-sans-light.woff") format("woff"),
+		/* Pretty Modern Browsers */
+		url($filePath+"app/fonts/product-sans-light.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url($filePath+"app/fonts/product-sans-light.svg") format("svg");
+	/* Legacy iOS */
+}

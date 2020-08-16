@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120px" height="120px" viewBox="0 0 120 120" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-60.6%" y="-60.6%" width="221.2%" height="221.2%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="10" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="GHS---Landing---Employer" transform="translate(-900.000000, -3621.000000)" fill-rule="nonzero">
+            <g id="05.-Candidate-Success-Story" transform="translate(480.000000, 3245.000000)">
+                <g id="02.-Video" transform="translate(0.000000, 161.000000)">
+                    <g id="Play-Btn" filter="url(#filter-1)" transform="translate(440.000000, 230.000000)">
+                        <g id="Group">
+                            <circle id="Circle" stroke="#FFFFFF" stroke-width="3" cx="40" cy="40" r="38.5"></circle>
+                            <path d="M43.9270664,29.8908122 L56.1900322,48.2852609 C56.8027371,49.2043183 56.5543894,50.4460569 55.635332,51.0587619 C55.306797,51.2777852 54.9207816,51.3946613 54.5259316,51.3946613 L30,51.3946613 C28.8954305,51.3946613 28,50.4992308 28,49.3946613 C28,48.9998113 28.1168761,48.6137959 28.3358994,48.2852609 L40.5988652,29.8908122 C41.2115701,28.9717548 42.4533088,28.723407 43.3723662,29.336112 C43.5920708,29.4825817 43.7805967,29.6711076 43.9270664,29.8908122 Z" id="Play-Icon" fill="#FFFFFF" transform="translate(42.263072, 40.197331) rotate(90.000000) translate(-42.263072, -40.197331) "></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

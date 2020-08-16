@@ -1,0 +1,59 @@
+// Breakpoint
+$xsmall: 480px !default;
+$small: 767px !default;
+$medium: 768px !default;
+$xmedium: 992px !default;
+$large: 1200px !default;
+$xlarge: 1440px !default;
+$xxlarge: 1600px !default;
+$xxxlarge: 1800px !default;
+// Spacing
+$spacing-base: 15px;
+$spacing-double: $spacing-base * 2;
+$spacing-triple: $spacing-base * 3;
+$spacing-four: $spacing-base * 4;
+$spacing-half: $spacing-base/2;
+$spacing-quarter: $spacing-half/2;
+// Container
+$container: 1300px !default;
+$container-sm: 960px !default;
+// Width
+$width-full: 100% !default;
+$width-half: $width-full / 2 !default;
+$width-25: $width-full / 4 !default;
+$width-75: $width-full - $width-25 !default;
+$full-height: $width-full;
+// Font Family
+// $font-family-body: 'Montserrat', sans-serif !default;
+$font-family-body: "product-regular";
+$font-family-bold: "product-bold";
+$font-product-light: "product-light";
+$font-product-medium: "product-medium";
+// Typography
+$font-size-body: 18px !default;
+$font-size-h1: 64px !default;
+$font-size-h1-large: 150px !default;
+$font-size-h2: 50px !default;
+$font-size-h3: 40px !default;
+$font-size-h4: 32px !default;
+$font-size-h5: 22px !default;
+$font-size-h6: 20px !default;
+// $font-size-p: $font-size-body+2 !default;
+$font-size-xsm: 12px;
+$font-size-sm: 16px;
+$font-size-lg: 20px;
+// Font Weight
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-bold: 600;
+// Colors
+$color-primary: #1453D3 !default;
+$color-secondery: #FF3068;
+$color-heading: #111D31;
+$color-text: rgba($color-heading, 0.5);
+$color-gray: #F6F6F6;
+$color-border: #C3C3C3;
+$color-white: #fff;
+$color-black: #000;
+// Breakpoints
+$breakpoints: (xxxlarge: $xxxlarge, xlarge: $xlarge, xsml: $xsmall, small: $small, medium: $medium, xmedium: $xmedium, large: $large, xxlarge: $xxlarge);

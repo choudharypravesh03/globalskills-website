@@ -1,0 +1,68 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-bold;
+    color: $color-heading;
+}
+
+h1 {
+    font-size: $font-size-h1;
+    @include breakpoint(xlarge) {
+        font-size: 55px;
+    }
+    @include breakpoint(large) {
+        font-size: 50px;
+    }
+}
+
+h2 {
+    font-size: $font-size-h2;
+    @include breakpoint(large) {
+        font-size: 45px;
+    }
+    @include breakpoint(medium) {
+        font-size: 35px;
+    }
+    @include breakpoint(xsml) {
+        font-size: 25px;
+    }
+}
+
+h3 {
+    font-size: $font-size-h3;
+    @include breakpoint(large) {
+        font-size: 35px;
+    }
+    @include breakpoint(medium) {
+        font-size: 30px;
+    }
+    @include breakpoint(xsml) {
+        font-size: 20px;
+        font-family: $font-family-body
+    }
+}
+
+h4 {
+    font-size: $font-size-h4;
+    @include breakpoint(large) {
+        font-size: 26px;
+    }
+}
+
+h5 {
+    font-size: $font-size-h5;
+}
+
+h6 {
+    font-size: $font-size-h6;
+    @include breakpoint(xsml) {
+        font-size: 15px;
+    }
+}
+
+p {
+    line-height: 1.5;
+}

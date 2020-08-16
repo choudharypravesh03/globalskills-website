@@ -1,0 +1,1409 @@
+
+
+
+
+ 
+
+<!DOCTYPE html>
+<!--[if IE 8 ]>    <html class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="preload" as="style" href="./styles/main.css">
+<link rel="preload" as="style" href="./styles/font.css">
+
+<link rel="stylesheet" href="./styles/main.css">
+<link rel="stylesheet" href="./styles/font.css">
+
+<script type='text/javascript'>/* eslint-disable */
+
+/* Modernizr 2.8.3 (Custom Build) | MIT & BSD
+ * Build: http://modernizr.com/download/#-cssanimations-csstransforms-csstransforms3d-csstransitions-touch-mq-cssclasses-addtest-prefixed-teststyles-testprop-testallprops-prefixes-domprefixes-css_filters
+ */
+;window.Modernizr=function(a,b,c){function A(a){j.cssText=a}function B(a,b){return A(m.join(a+";")+(b||""))}function C(a,b){return typeof a===b}function D(a,b){return!!~(""+a).indexOf(b)}function E(a,b){for(var d in a){var e=a[d];if(!D(e,"-")&&j[e]!==c)return b=="pfx"?e:!0}return!1}function F(a,b,d){for(var e in a){var f=b[a[e]];if(f!==c)return d===!1?a[e]:C(f,"function")?f.bind(d||b):f}return!1}function G(a,b,c){var d=a.charAt(0).toUpperCase()+a.slice(1),e=(a+" "+o.join(d+" ")+d).split(" ");return C(b,"string")||C(b,"undefined")?E(e,b):(e=(a+" "+p.join(d+" ")+d).split(" "),F(e,b,c))}var d="2.8.3",e={},f=!0,g=b.documentElement,h="modernizr",i=b.createElement(h),j=i.style,k,l={}.toString,m=" -webkit- -moz- -o- -ms- ".split(" "),n="Webkit Moz O ms",o=n.split(" "),p=n.toLowerCase().split(" "),q={},r={},s={},t=[],u=t.slice,v,w=function(a,c,d,e){var f,i,j,k,l=b.createElement("div"),m=b.body,n=m||b.createElement("body");if(parseInt(d,10))while(d--)j=b.createElement("div"),j.id=e?e[d]:h+(d+1),l.appendChild(j);return f=["&#173;",'<style id="s',h,'">',a,"</style>"].join(""),l.id=h,(m?l:n).innerHTML+=f,n.appendChild(l),m||(n.style.background="",n.style.overflow="hidden",k=g.style.overflow,g.style.overflow="hidden",g.appendChild(n)),i=c(l,a),m?l.parentNode.removeChild(l):(n.parentNode.removeChild(n),g.style.overflow=k),!!i},x=function(b){var c=a.matchMedia||a.msMatchMedia;if(c)return c(b)&&c(b).matches||!1;var d;return w("@media "+b+" { #"+h+" { position: absolute; } }",function(b){d=(a.getComputedStyle?getComputedStyle(b,null):b.currentStyle)["position"]=="absolute"}),d},y={}.hasOwnProperty,z;!C(y,"undefined")&&!C(y.call,"undefined")?z=function(a,b){return y.call(a,b)}:z=function(a,b){return b in a&&C(a.constructor.prototype[b],"undefined")},Function.prototype.bind||(Function.prototype.bind=function(b){var c=this;if(typeof c!="function")throw new TypeError;var d=u.call(arguments,1),e=function(){if(this instanceof e){var a=function(){};a.prototype=c.prototype;var f=new a,g=c.apply(f,d.concat(u.call(arguments)));return Object(g)===g?g:f}return c.apply(b,d.concat(u.call(arguments)))};return e}),q.touch=function(){var c;return"ontouchstart"in a||a.DocumentTouch&&b instanceof DocumentTouch?c=!0:w(["@media (",m.join("touch-enabled),("),h,")","{#modernizr{top:9px;position:absolute}}"].join(""),function(a){c=a.offsetTop===9}),c},q.cssanimations=function(){return G("animationName")},q.csstransforms=function(){return!!G("transform")},q.csstransforms3d=function(){var a=!!G("perspective");return a&&"webkitPerspective"in g.style&&w("@media (transform-3d),(-webkit-transform-3d){#modernizr{left:9px;position:absolute;height:3px;}}",function(b,c){a=b.offsetLeft===9&&b.offsetHeight===3}),a},q.csstransitions=function(){return G("transition")};for(var H in q)z(q,H)&&(v=H.toLowerCase(),e[v]=q[H](),t.push((e[v]?"":"no-")+v));return e.addTest=function(a,b){if(typeof a=="object")for(var d in a)z(a,d)&&e.addTest(d,a[d]);else{a=a.toLowerCase();if(e[a]!==c)return e;b=typeof b=="function"?b():b,typeof f!="undefined"&&f&&(g.className+=" "+(b?"":"no-")+a),e[a]=b}return e},A(""),i=k=null,e._version=d,e._prefixes=m,e._domPrefixes=p,e._cssomPrefixes=o,e.mq=x,e.testProp=function(a){return E([a])},e.testAllProps=G,e.testStyles=w,e.prefixed=function(a,b,c){return b?G(a,b,c):G(a,"pfx")},g.className=g.className.replace(/(^|\s)no-js(\s|$)/,"$1$2")+(f?" js "+t.join(" "):""),e}(this,this.document),Modernizr.addTest("cssfilters",function(){var a=document.createElement("div");return a.style.cssText=Modernizr._prefixes.join("filter:blur(2px); "),!!a.style.length&&(document.documentMode===undefined||document.documentMode>9)});
+
+</script>
+
+<script type='text/javascript'>
+  Modernizr.addTest('firefox', typeof InstallTrigger !== 'undefined')
+  Modernizr.addTest('ie', (navigator.appName == 'Microsoft Internet Explorer') || (Object.hasOwnProperty.call(window, "ActiveXObject") && !window.ActiveXObject))
+</script>
+
+<script>
+  window.lazySizesConfig = {
+    addClasses: true,
+    expand: window.innerHeight,
+    lazyClass: 'lazyload',
+    loadingClass: 'is-loading',
+    loadedClass: 'is-loaded'
+  };
+</script>
+
+  <!-- BEGIN SEOmatic rendered SEO Meta -->
+
+<title>Chicago Web Design – One Design Company</title>
+
+<!-- Standard SEO -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="referrer" content="always" />
+<meta name="robots" content="all" />
+<meta name="keywords" content="default,global,comma-separated,keywords" />
+<meta name="description" content="We transform research and insight into memorable web design, development and brand strategy." />
+<meta name="generator" content="SEOmatic" />
+<link rel="canonical" href="https://onedesigncompany.com/" />
+<meta name="geo.region" content="Chicago" />
+<meta name="geo.placename" content="One Design Company – Chicago Web Design" />
+
+<!-- Dublin Core basic info -->
+
+<meta name="dcterms.Identifier" content="https://onedesigncompany.com/" />
+<meta name="dcterms.Format" content="text/html" />
+<meta name="dcterms.Relation" content="One Design Company" />
+<meta name="dcterms.Language" content="en" />
+<meta name="dcterms.Publisher" content="One Design Company" />
+<meta name="dcterms.Type" content="text/html" />
+<meta name="dcterms.Coverage" content="https://onedesigncompany.com/" />
+<meta name="dcterms.Rights" content="Copyright &copy;2020 One Design Company – Chicago Web Design." />
+<meta name="dcterms.Title" content="Chicago Web Design" />
+<meta name="dcterms.Subject" content="default,global,comma-separated,keywords" />
+<meta name="dcterms.Contributor" content="One Design Company" />
+<meta name="dcterms.Date" content="2020-07-23" />
+<meta name="dcterms.Description" content="We transform research and insight into memorable web design, development and brand strategy." />
+
+<!-- Facebook OpenGraph -->
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="en_us" />
+<meta property="og:url" content="https://onedesigncompany.com/" />
+<meta property="og:title" content="Chicago Web Design – One Design Company" />
+<meta property="og:description" content="We transform research and insight into memorable web design, development and brand strategy." />
+<meta property="og:image" content="https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="1200" />
+<meta property="og:site_name" content="One Design Company" />
+<meta property="og:see_also" content="https://twitter.com/onedesignco" />
+<meta property="og:see_also" content="https://www.facebook.com/onedesigncompany" />
+<meta property="og:see_also" content="https://www.linkedin.com/company/one-design-company" />
+<meta property="og:see_also" content="https://www.instagram.com/onedesignco" />
+<meta property="og:see_also" content="https://github.com/onedesign" />
+<meta property="og:see_also" content="https://vimeo.com/onedesigncompany" />
+
+<!-- Twitter Card -->
+
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@onedesignco" />
+<meta name="twitter:title" content="Chicago Web Design – One Design Company" />
+<meta name="twitter:description" content="We transform research and insight into memorable web design, development and brand strategy." />
+<meta name="twitter:image" content="https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554" />
+
+
+<!-- Humans.txt authorship http://humanstxt.org -->
+
+<link type="text/plain" rel="author" href="/humans.txt" />
+
+<!-- Domain verification -->
+
+<meta name="google-site-verification" content="VhQ26AWrKajF95oFWUyerkpdYaETX22CHtWqAc1rU0o" />
+
+<!-- Identity -->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Corporation",
+    "name": "One Design Company – Chicago Web Design",
+    "url": "https://onedesigncompany.com/",
+    "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+        "height": "1200",
+        "width": "1200" 
+    },
+    "telephone": "312 602 3335",
+    "email": "&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "230 W Superior, Suite 700",
+        "addressRegion": "Chicago",
+        "postalCode": "60654",
+        "addressCountry": "US" 
+    },
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+        "height": "1200",
+        "width": "1200" 
+    },
+    "location": {
+        "@type": "Place",
+        "name": "One Design Company – Chicago Web Design",
+        "telephone": "312 602 3335",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "url": "https://onedesigncompany.com/",
+        "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "230 W Superior, Suite 700",
+            "addressRegion": "Chicago",
+            "postalCode": "60654",
+            "addressCountry": "US" 
+        } 
+    } 
+}
+</script>
+
+<!-- WebSite -->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "One Design Company",
+    "description": "We transform research and insight into memorable web design, development and brand strategy.",
+    "url": "https://onedesigncompany.com/",
+    "image": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+    "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+    "copyrightHolder": {
+        "@type": "Corporation",
+        "name": "One Design Company – Chicago Web Design",
+        "url": "https://onedesigncompany.com/",
+        "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "telephone": "312 602 3335",
+        "email": "&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "230 W Superior, Suite 700",
+            "addressRegion": "Chicago",
+            "postalCode": "60654",
+            "addressCountry": "US" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "location": {
+            "@type": "Place",
+            "name": "One Design Company – Chicago Web Design",
+            "telephone": "312 602 3335",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "url": "https://onedesigncompany.com/",
+            "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "230 W Superior, Suite 700",
+                "addressRegion": "Chicago",
+                "postalCode": "60654",
+                "addressCountry": "US" 
+            } 
+        } 
+    },
+    "author": {
+        "@type": "Corporation",
+        "name": "One Design Company – Chicago Web Design",
+        "url": "https://onedesigncompany.com/",
+        "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "telephone": "312 602 3335",
+        "email": "&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "230 W Superior, Suite 700",
+            "addressRegion": "Chicago",
+            "postalCode": "60654",
+            "addressCountry": "US" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "location": {
+            "@type": "Place",
+            "name": "One Design Company – Chicago Web Design",
+            "telephone": "312 602 3335",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "url": "https://onedesigncompany.com/",
+            "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "230 W Superior, Suite 700",
+                "addressRegion": "Chicago",
+                "postalCode": "60654",
+                "addressCountry": "US" 
+            } 
+        } 
+    },
+    "creator": {
+        "@type": "Organization" 
+    } 
+}
+</script>
+
+<!-- Place -->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Place",
+    "name": "One Design Company – Chicago Web Design",
+    "telephone": "312 602 3335",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+        "height": "1200",
+        "width": "1200" 
+    },
+    "logo": {
+        "@type": "ImageObject",
+        "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+        "height": "1200",
+        "width": "1200" 
+    },
+    "url": "https://onedesigncompany.com/",
+    "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "230 W Superior, Suite 700",
+        "addressRegion": "Chicago",
+        "postalCode": "60654",
+        "addressCountry": "US" 
+    } 
+}
+</script>
+
+<!-- Main Entity of Page -->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "name": "Chicago Web Design",
+    "description": "We transform research and insight into memorable web design, development and brand strategy.",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+        "width": "1200",
+        "height": "1200" 
+    },
+    "url": "https://onedesigncompany.com/",
+    "mainEntityOfPage": "https://onedesigncompany.com/",
+    "inLanguage": "en_us",
+    "headline": "Chicago Web Design",
+    "keywords": "default,global,comma-separated,keywords",
+    "dateCreated": "2014-06-28T23:02:26+0000",
+    "dateModified": "2020-04-21T15:36:50+0000",
+    "datePublished": "2014-07-01T18:16:10+0000",
+    "copyrightYear": "2014",
+    "author": {
+        "@type": "Corporation",
+        "name": "One Design Company – Chicago Web Design",
+        "url": "https://onedesigncompany.com/",
+        "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "telephone": "312 602 3335",
+        "email": "&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "230 W Superior, Suite 700",
+            "addressRegion": "Chicago",
+            "postalCode": "60654",
+            "addressCountry": "US" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "location": {
+            "@type": "Place",
+            "name": "One Design Company – Chicago Web Design",
+            "telephone": "312 602 3335",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "url": "https://onedesigncompany.com/",
+            "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "230 W Superior, Suite 700",
+                "addressRegion": "Chicago",
+                "postalCode": "60654",
+                "addressCountry": "US" 
+            } 
+        } 
+    },
+    "publisher": {
+        "@type": "Corporation",
+        "name": "One Design Company – Chicago Web Design",
+        "url": "https://onedesigncompany.com/",
+        "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "telephone": "312 602 3335",
+        "email": "&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "230 W Superior, Suite 700",
+            "addressRegion": "Chicago",
+            "postalCode": "60654",
+            "addressCountry": "US" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "location": {
+            "@type": "Place",
+            "name": "One Design Company – Chicago Web Design",
+            "telephone": "312 602 3335",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "url": "https://onedesigncompany.com/",
+            "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "230 W Superior, Suite 700",
+                "addressRegion": "Chicago",
+                "postalCode": "60654",
+                "addressCountry": "US" 
+            } 
+        } 
+    },
+    "copyrightHolder": {
+        "@type": "Corporation",
+        "name": "One Design Company – Chicago Web Design",
+        "url": "https://onedesigncompany.com/",
+        "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "telephone": "312 602 3335",
+        "email": "&#105;&#110;&#102;&#111;&#64;&#111;&#110;&#101;&#100;&#101;&#115;&#105;&#103;&#110;&#99;&#111;&#109;&#112;&#97;&#110;&#121;&#46;&#99;&#111;&#109;",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "230 W Superior, Suite 700",
+            "addressRegion": "Chicago",
+            "postalCode": "60654",
+            "addressCountry": "US" 
+        },
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+            "height": "1200",
+            "width": "1200" 
+        },
+        "location": {
+            "@type": "Place",
+            "name": "One Design Company – Chicago Web Design",
+            "telephone": "312 602 3335",
+            "image": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://s3.amazonaws.com/odc-web/clients/one-social-meta.png?mtime=20170310115554",
+                "height": "1200",
+                "width": "1200" 
+            },
+            "url": "https://onedesigncompany.com/",
+            "sameAs": ["https://twitter.com/onedesignco","https://www.facebook.com/onedesigncompany","https://www.linkedin.com/company/one-design-company","https://www.instagram.com/onedesignco","https://github.com/onedesign","https://vimeo.com/onedesigncompany"],
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "230 W Superior, Suite 700",
+                "addressRegion": "Chicago",
+                "postalCode": "60654",
+                "addressCountry": "US" 
+            } 
+        } 
+    },
+    "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": "1",
+                "item": {
+                    "@id": "https://onedesigncompany.com/",
+                    "name": "Home" 
+                } 
+            }
+        ] 
+    } 
+}
+</script>
+
+<!-- Breadcrumbs -->
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+        {
+            "@type": "ListItem",
+            "position": "1",
+            "item": {
+                "@id": "https://onedesigncompany.com/",
+                "name": "Home" 
+            } 
+        }
+    ] 
+}
+</script>
+
+<!-- Google Tag Manager -->
+
+<script>
+  dataLayer = [];
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-W26T6L9');
+</script>
+<!-- Google Analytics -->
+
+
+<!-- END SEOmatic rendered SEO Meta -->
+  <link href="https://onedesigncompany.com/news/feed.rss" rel="alternate" type="application/rss+xml" title="One Design Company News">
+</head>
+
+<body>
+  <div class="l-container">
+    
+      
+<header class="l-header l-header--knockout">
+
+  <a href="/" class="odc-logo-link">
+    <img src="/images/odc-linked_odc-logo-white.svg" alt="One Design Company">
+  </a>
+
+      
+  <nav class="nav-primary nav-primary--knockout">
+          <a href="/work" class="nav-primary__item">Work</a>
+          <a href="/approach" class="nav-primary__item">Approach</a>
+          <a href="/about" class="nav-primary__item">About</a>
+          <a href="/contact" class="nav-primary__item">Contact</a>
+          <a href="/news" class="nav-primary__item">News</a>
+      </nav>
+</header>
+    
+  
+  <section class="l-home-header js-home-header">
+      
+<div class="intro-anim-bg intro-anim-bg--1 js-intro-anim-bg-1"></div>
+<div class="intro-anim-bg intro-anim-bg--2 js-intro-anim-bg-2"></div>
+<div class="intro-anim-bg intro-anim-bg--3 js-intro-anim-bg-3"></div>
+<div class="intro-anim-bg intro-anim-bg--4 js-intro-anim-bg-4"></div>
+
+<div class="intro-anim js-intro-anim">
+  <div class="home-intro-loader js-intro-anim-preloader"></div>
+  
+      
+  <div class="intro-anim__content js-intro-anim-content">
+	<svg version="1.1" id="svg-intro-anim" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="700px" height="500px" viewBox="0 0 700 500" enable-background="new 0 0 700 500" xml:space="preserve">
+		<g id="experiences">
+			<path id="ring3" fill="none" stroke="#FFFFFF" stroke-width="7.454" stroke-linecap="round" stroke-miterlimit="10" d="
+				M321.7,116.3c71-15.6,141.8,29.8,157.4,100.8s-29.8,141.8-100.8,157.4s-141.8-29.8-157.4-100.8c-12.6-57.6,14.8-115,63.4-143" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; stroke-width: 7.454px; transform-origin: 0px 0px 0px;" data-svg-origin="350.0079803466797 245.4000015258789" transform="matrix(1.2,0,0,1.2,-70.0015960693359,-49.08000030517576)"></path>
+			<path id="ring2" fill="none" stroke="#FFFFFF" stroke-width="7.319" stroke-linecap="round" stroke-miterlimit="10" d="
+				M411.2,411.8c-91.5,33.7-194-13.7-227.6-105.2s13.7-194,105.2-227.6s194,13.7,227.6,105.2c27.3,74.2,1.4,155.6-58.2,201.7" data-svg-origin="350.0207061767578 245.4199981689453" transform="matrix(1.2,0,0,1.2,-70.00414123535154,-49.08399963378906)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; stroke-width: 2px; transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0;"></path>
+			<path id="ring1" fill="none" stroke="#FFFFFF" stroke-width="7.319" stroke-linecap="round" stroke-miterlimit="10" d="M295.9,24.4
+				C417.4-5.3,541.2,69.8,571,191.3c29.8,121.5-45.3,245.3-166.8,275.1S158.8,421,129,299.5C104.9,201,149.7,101,232.3,50.8" data-svg-origin="350.0141296386719 245.41611289978027" transform="matrix(1.2,0,0,1.2,-70.00282592773436,-49.08322257995604)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; stroke-width: 2px; transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0;"></path>
+			<path id="ring4" fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M380.3,330.8c-47,16.6-99.1-8.2-115.7-55.2s8.2-99.1,55.2-115.7s99.1,8.2,115.7,55.2c13.5,38.1-0.3,79.5-31,102.7" data-svg-origin="350.058837890625 245.34998321533203" transform="matrix(1.2,0,0,1.2,-70.01176757812499,-49.06999664306642)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; stroke-width: 2px; transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0;"></path>
+			
+				<path id="pointer" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M388.2,270.7l-38.7-29.6c0,0,0,19.1,0,25.5c0,6.4,0,25.5,0,25.5l13.4-6.5l13.2,26.3l14.4-7.1l-13.4-26.9" data-svg-origin="370 276.5" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 191.15; stroke-dasharray: 0px, 999999px; visibility: inherit; opacity: 1; transform-origin: 0px 0px 0px;"></path>
+			<path id="cloud3" fill="#00CACA" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M146,294.2c0.1-1,0.1-2,0.1-3c0-23.9-19.3-43.2-43.2-43.2c-20.1,0-37,13.7-41.8,32.3c-4.6-2.2-9.8-3.5-15.3-3.5
+				c-19.6,0-35.4,15.9-35.4,35.4s15.9,35.4,35.4,35.4c0.6,0,109.5,0,109.9,0c15.3,0,27.6-12.4,27.6-27.6s-12.4-27.6-27.6-27.6
+				C152.3,292.5,149,293.1,146,294.2" data-svg-origin="360.40000915527344 498.00001525878906" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; fill-opacity: 1;"></path>
+			<path id="cloud1" fill="#00CACA" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M390.8,156.5c0-0.6,0.1-1.2,0.1-1.7c0-13.6-11.1-24.7-24.7-24.7c-11.5,0-21.1,7.8-23.9,18.5c-2.6-1.3-5.6-2-8.7-2
+				c-11.2,0-20.2,9.1-20.2,20.2c0,11.2,9.1,20.2,20.2,20.2c0.3,0,62.6,0,62.8,0c8.7,0,15.8-7.1,15.8-15.8c0-8.7-7.1-15.8-15.8-15.8
+				C394.4,155.4,392.5,155.8,390.8,156.5" data-svg-origin="663.3999633789062 380.1000061035156" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; fill-opacity: 1;"></path>
+			<path id="cloud2" fill="#00CACA" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M595.4,266.6c0.1-0.8,0.1-1.6,0.1-2.3c0-18.5-15-33.4-33.4-33.4c-15.6,0-28.6,10.6-32.4,25c-3.6-1.7-7.6-2.7-11.8-2.7
+				c-15.1,0-27.4,12.3-27.4,27.4c0,15.1,12.3,27.4,27.4,27.4c0.5,0,84.8,0,85.1,0c11.8,0,21.4-9.6,21.4-21.4s-9.6-21.4-21.4-21.4
+				C600.3,265.2,597.8,265.7,595.4,266.6" data-svg-origin="840.4999694824219 480.9000244140625" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; fill-opacity: 1;"></path>
+			<path id="ring5" fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M350.2,278.2c-16.6,0-31-12.7-32.7-29.6c-1.8-17.9,11.5-34.1,29.4-35.8c17.9-1.8,34.1,11.5,35.8,29.4" data-svg-origin="350.0183868408203 245.41839599609375" transform="matrix(1.2,0,0,1.2,-70.00367736816406,-49.08367919921875)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; stroke-width: 2px; transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0;"></path>
+			<g id="nextGroup">
+				<path id="nextStroke" fill="none" stroke="#FFFFFF" stroke-width="7.454" stroke-linecap="round" stroke-miterlimit="10" d="
+					M350,301.2c0,0,0,19.3,0,25.8s0,25.8,0,25.8" style="stroke-dashoffset: 1e-05; stroke-dasharray: none;"></path>
+				
+					<polyline id="nextArrow" fill="none" stroke="#FFFFFF" stroke-width="7.454" stroke-linecap="round" stroke-miterlimit="10" points="
+					365.8,336.8 350,352.7 334.2,336.8 		" style="stroke-opacity: 1;"></polyline>
+			</g>
+		</g>
+		<g id="into-insight">
+			<path id="right-cloud" fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M527.5,230.4c0-0.5,0.1-1,0.1-1.5c0-11.8-9.6-21.4-21.4-21.4c-9.9,0-18.3,6.8-20.7,16c-2.3-1.1-4.9-1.7-7.6-1.7
+				c-9.7,0-17.5,7.8-17.5,17.5c0,9.7,7.8,17.5,17.5,17.5c0.3,0,54.1,0,54.3,0c7.5,0,13.7-6.1,13.7-13.7s-6.1-13.7-13.7-13.7
+				C530.6,229.5,529,229.8,527.5,230.4" data-svg-origin="460.39996337890625 207.5" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 229.304; stroke-dasharray: 0px, 999999px;"></path>
+			<path id="left-cloud" fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M158.6,255.1c0-0.6,0.1-1.3,0.1-1.9c0-15.2-12.4-27.6-27.6-27.6c-12.8,0-23.6,8.8-26.7,20.6c-3-1.4-6.3-2.2-9.8-2.2
+				c-12.5,0-22.6,10.1-22.6,22.6c0,12.5,10.1,22.6,22.6,22.6c0.4,0,70,0,70.2,0c9.7,0,17.6-7.9,17.6-17.6s-7.9-17.6-17.6-17.6
+				C162.7,253.9,160.6,254.3,158.6,255.1" data-svg-origin="72.00000762939453 225.60000610351562" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 295.488; stroke-dasharray: 0px, 999999px;"></path>
+			<g id="cloudCover" style="visibility: hidden; opacity: 0;">
+				<path fill="#0085A1" d="M503.4,116.6C429.7,116.6,370,176.3,370,250c0,73.7,59.7,133.4,133.4,133.4S636.8,323.7,636.8,250
+					C636.8,176.3,577.1,116.6,503.4,116.6z M503,331.7c-45.1,0-81.7-36.6-81.7-81.7s36.6-81.7,81.7-81.7s81.7,36.6,81.7,81.7
+					S548.2,331.7,503,331.7z" style="stroke-dashoffset: 1352.73; stroke-dasharray: 0px, 999999px;"></path>
+				<path fill="#0085A1" d="M195.6,116.2c-73.7,0-133.4,59.7-133.4,133.4c0,73.7,59.7,133.4,133.4,133.4S329,323.3,329,249.6
+					C329,175.9,269.3,116.2,195.6,116.2z M196,331.7c-45.1,0-81.7-36.6-81.7-81.7s36.6-81.7,81.7-81.7s81.7,36.6,81.7,81.7
+					S241.1,331.7,196,331.7z" style="stroke-dashoffset: 1352.71; stroke-dasharray: 0px, 999999px;"></path>
+			</g>
+			<g id="lens-lines-right" data-svg-origin="503.3999938964844 249.60000610351562" transform="matrix(0,1,-1,0,753,-253.79998779296875)" style="visibility: hidden; opacity: 0; transform-origin: 0px 0px 0px;">
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="500" y1="139.5" x2="500" y2="152.5"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="578.9" y1="169.4" x2="569.7" y2="178.6"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="613.5" y1="246.2" x2="600.5" y2="246.2"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="583.6" y1="325.1" x2="574.5" y2="315.9"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="506.8" y1="359.7" x2="506.8" y2="346.7"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="427.9" y1="329.9" x2="437.1" y2="320.7"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="393.3" y1="253" x2="406.3" y2="253"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="423.1" y1="174.2" x2="432.3" y2="183.4"></line>
+			</g>
+			<g id="lens-lines-left" data-svg-origin="195.60000610351562 249.60000610351562" transform="matrix(0,1,-1,0,445.20001220703125,53.99999999999997)" style="visibility: hidden; opacity: 0; transform-origin: 0px 0px 0px;">
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="199" y1="139.5" x2="199" y2="152.5"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="120.1" y1="169.4" x2="129.3" y2="178.6"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="85.5" y1="246.2" x2="98.5" y2="246.2"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="115.4" y1="325.1" x2="124.5" y2="315.9"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="192.2" y1="359.7" x2="192.2" y2="346.7"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="271.1" y1="329.9" x2="261.9" y2="320.7"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="305.7" y1="253" x2="292.7" y2="253"></line>
+				
+					<line fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="275.9" y1="174.2" x2="266.7" y2="183.4"></line>
+			</g>
+			
+				<path id="inner-lens-right" fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M584.8,250c0-45.1-36.6-81.7-81.7-81.7s-81.7,36.6-81.7,81.7s36.6,81.7,81.7,81.7S584.8,295.1,584.8,250" data-svg-origin="503.0999755859375 250.00000762939453" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; visibility: hidden; opacity: 0;"></path>
+			<path id="inner-lens-left" fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M277.7,250c0,45.1-36.6,81.7-81.7,81.7s-81.7-36.6-81.7-81.7s36.6-81.7,81.7-81.7S277.7,204.9,277.7,250" data-svg-origin="196.00001525878906 250.00001525878906" transform="matrix(1,0,0,1,0,0)" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; visibility: hidden; opacity: 0;"></path>
+			
+				<circle id="outer-lens-right" fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" cx="503.4" cy="250" r="110.3" data-svg-origin="503.3999786376953 250" transform="matrix(1.9,0,0,1.9,-606.0599807739258,-225)" style="visibility: hidden; opacity: 0; stroke-width: 3px; transform-origin: 0px 0px 0px;"></circle>
+			
+				<circle id="outer-lens-left" fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" cx="195.6" cy="249.6" r="110.3" data-svg-origin="195.60000610351562 249.60000610351562" transform="matrix(0.8,0,0,0.8,192.1200012207031,49.920001220703114)" style="visibility: hidden; opacity: 0; stroke-width: 7.3621px; transform-origin: 0px 0px 0px;"></circle>
+			<g id="frame-center-lines" data-svg-origin="349.5 182.95000457763672" transform="matrix(1,0,0,1,0,0)" style="stroke-opacity: 1; visibility: hidden; opacity: 0;">
+				
+					<line fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="349.5" y1="140.6" x2="349.5" y2="167.1"></line>
+				
+					<line fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" x1="349.5" y1="203.1" x2="349.5" y2="225.3"></line>
+			</g>
+			<g id="frame-center-hub" data-svg-origin="349.4999942779541 184.6999912261963" transform="matrix(1,0,0,1,0,0)" style="stroke-opacity: 1; visibility: hidden; opacity: 0;">
+				
+					<circle fill="none" stroke="#FFFFFF" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" cx="349.5" cy="184.7" r="17.6"></circle>
+			</g>
+			<path id="frame-bottom_1_" fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M409.6,307.6c-11.4-18.5-34.7-55.1-46.1-73.6c-2.9-4.7-8.1-7.8-14-7.8s-11.1,3.1-14,7.8c-11.4,18.5-34.7,55.2-46.1,73.7" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; visibility: hidden; opacity: 0;"></path>
+			<path id="frame-top_1_" fill="none" stroke="#CCFFF0" stroke-width="7.3621" stroke-linecap="round" stroke-miterlimit="10" d="
+				M196,139.7c0,0,115.1,0,153.5,0s153.5,0,153.5,0" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; visibility: hidden; opacity: 0;"></path>
+		</g>
+		<g id="transform-research">
+			
+				<path id="surrounding-circle" fill="none" stroke="#3AE8D8" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M350,60.7c-104.5,0-189.3,84.8-189.3,189.3S245.5,439.3,350,439.3S539.3,354.5,539.3,250S454.5,60.7,350,60.7" style="stroke-dashoffset: 1e-05; stroke-dasharray: none; visibility: hidden; opacity: 0;"></path>
+			
+				<circle id="circle-01" fill="none" stroke="#94FFF6" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="260.8" cy="196.7" r="78.6" data-svg-origin="260.7999801635742 196.6999969482422" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-02" fill="none" stroke="#93ED9E" stroke-width="7.5449" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="360.5" cy="112.5" r="44.5" data-svg-origin="360.5 112.5" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-03" fill="none" stroke="#94FFF6" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="494.4" cy="208.4" r="31.8" data-svg-origin="494.4000053405762 208.3999900817871" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-04" fill="none" stroke="#FFF0D6" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="400.7" cy="211.3" r="55.1" data-svg-origin="400.7000045776367 211.30001068115234" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-05" fill="none" stroke="#FFF894" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="440" cy="129.1" r="29.3" data-svg-origin="440.0000114440918 129.10000228881836" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-06" fill="none" stroke="#FFF0D6" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="454.2" cy="371.2" r="22.1" data-svg-origin="454.20000648498535 371.20000648498535" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-07" fill="none" stroke="#93ED9E" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="474.6" cy="294.7" r="50" data-svg-origin="474.6000061035156 294.70001220703125" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-08" fill="none" stroke="#94FFF6" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="236.2" cy="369.5" r="16.9" data-svg-origin="236.2000026702881 369.5000057220459" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-09" fill="none" stroke="#FFF894" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="342.7" cy="346.7" r="85" data-svg-origin="342.70001220703125 346.70001220703125" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+			
+				<circle id="circle-10" fill="none" stroke="#FFF0D6" stroke-width="7.32" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="218.6" cy="311.5" r="36.9" data-svg-origin="218.60001373291016 311.50000762939453" transform="matrix(1,0,0,1,0,0)" style="transform-origin: 0px 0px 0px; visibility: hidden; opacity: 0; stroke-width: 7px;"></circle>
+		</g>
+		<g id="were-one">
+			
+				<path id="circle-2" fill="none" stroke="#94FFF6" stroke-width="7.3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M185,250c0,91.1,73.9,165,165,165s165-73.9,165-165" style="stroke-dashoffset: 519.412; stroke-dasharray: 0px, 999999px;"></path>
+			
+				<path id="circle-1" fill="none" stroke="#94FFF6" stroke-width="7.3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M515,250c0-91.1-73.9-165-165-165s-165,73.9-165,165" style="stroke-dashoffset: 519.412; stroke-dasharray: 0px, 999999px;"></path>
+		</g>
+		<g id="hello">
+			<g id="hand" data-svg-origin="350 493.70001220703125" transform="matrix(0.64278,0.76604,-0.76604,0.64278,503.2204875286791,-91.75979363338399)" style="stroke-opacity: 1; transform-origin: 0px 0px 0px;">
+				<circle fill="none" cx="350" cy="493.7" r="399.2"></circle>
+				<g>
+					<path fill="none" stroke="#FFFFFF" stroke-width="7.3" stroke-linecap="round" stroke-miterlimit="10" d="M330.6,277.3
+						c0,0-9.3-18.4-26.6-18.4h-0.2v-36.9c0-8.4-6.9-15.4-15.3-15.4s-15.4,6.9-15.4,15.3c0,0-0.2,38.6-0.1,51.5
+						c0.2,37,26.6,68.9,61.6,76" style="stroke-dashoffset: 277.421; stroke-dasharray: 0px, 999999px;"></path>
+					
+						<path fill="none" stroke="#FFFFFF" stroke-width="7.3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+						M368.7,348.8c33.3-8.4,58.1-38.4,58.1-74.4l0.2-109.6c0-8.4-6.9-15.4-15.3-15.4s-15.4,6.9-15.4,15.3l-0.1,63.1l0.2-100.4
+						c0-8.4-6.9-15.4-15.3-15.4s-15.4,6.9-15.4,15.3l-0.2,87.6l0.2-97.3c0-8.4-6.9-15.4-15.3-15.4s-15.4,6.9-15.4,15.3l-0.2,97.3
+						l0.2-73.5c0-8.4-6.9-15.4-15.3-15.4s-15.4,6.9-15.4,15.3l-0.3,80.6" style="stroke-dashoffset: 1004.72; stroke-dasharray: 0px, 999999px;"></path>
+				</g>
+			</g>
+		</g>
+		</svg>
+  </div>
+  
+      
+  <div class="intro-anim-text">
+    <p class="intro-anim-text__text intro-anim-text__large js-intro-anim-text js-intro-anim-text-hello">
+      Hello.
+    </p>
+    <p class="intro-anim-text__text js-intro-anim-text js-intro-anim-text-were-one">
+      We&rsquo;re One Design Company.
+    </p>
+    <p class="intro-anim-text__text js-intro-anim-text js-intro-anim-text-transform-research">
+      We transform research...
+    </p>
+    <p class="intro-anim-text__text intro-anim-text__text--single-line js-intro-anim-text js-intro-anim-text-insight">
+      ...into insight.
+    </p>
+    <p class="intro-anim-text__text js-intro-anim-text js-intro-anim-text-experiences">
+      To create memorable experiences...
+    </p>
+    <p class="intro-anim-text__text intro-anim-text__text--single-line js-intro-anim-text js-intro-anim-text-web">
+      On the web...
+    </p>
+    <p class="intro-anim-text__text intro-anim-text__text--single-line js-intro-anim-text js-intro-anim-text-beyond">
+      and beyond.
+    </p>
+    <p class="intro-anim-text__text intro-anim-text__text--single-line js-intro-anim-text js-intro-anim-text-beyond">
+      and beyond.
+    </p>
+    <a href="/approach" class="intro-anim-text__text intro-anim-text__text--single-line js-intro-anim-text js-intro-anim-text-learn-more">
+      Learn More...
+    </a>
+  </div>
+</div>  </section>
+
+    
+    
+
+
+<section class="l-section-divider-content" id="intro-heading">
+  <div class="heading-set heading-set--centered js-typer">
+    <h1 class="heading-set__primary js-typer-heading">Your most audacious vision.</h1>
+    <p class="heading-set__secondary js-typer-subheading">Let us at it.</p>
+  </div>
+</section>
+    
+  <section class="l-featured-projects">
+      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-generate-biomedicines">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/generate-thumb-02.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/generate-thumb-02.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/generate-thumb-02.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/generate-thumb-02.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/generate-thumb-02.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/generate-thumb-02.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #000000;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Generate Biomedicines</h1>
+      <p class="heading-set__secondary">Now we can</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-mondo">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/mondo-cover.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/mondo-cover.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/mondo-cover.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/mondo-cover.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/mondo-cover.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/mondo-cover.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #4552ac;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Mondo</h1>
+      <p class="heading-set__secondary">By fans for fans</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-two-lights">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/news/twolights-main.jpg?mtime=20180515094429?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/news/twolights-main.jpg?mtime=20180515094429?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/news/twolights-main.jpg?mtime=20180515094429?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/news/twolights-main.jpg?mtime=20180515094429?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/news/twolights-main.jpg?mtime=20180515094429?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/news/twolights-main.jpg?mtime=20180515094429?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #ebc9ca;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Two Lights</h1>
+      <p class="heading-set__secondary">Oysters Forever</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-saint-kate">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/saintkate-work-thumb.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/saintkate-work-thumb.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/saintkate-work-thumb.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/saintkate-work-thumb.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/saintkate-work-thumb.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/saintkate-work-thumb.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #d6231f;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Saint Kate</h1>
+      <p class="heading-set__secondary">The Arts Hotel</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-smallflower">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/news/smallflower-main.jpg?mtime=20180515103832?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/news/smallflower-main.jpg?mtime=20180515103832?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/news/smallflower-main.jpg?mtime=20180515103832?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/news/smallflower-main.jpg?mtime=20180515103832?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/news/smallflower-main.jpg?mtime=20180515103832?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/news/smallflower-main.jpg?mtime=20180515103832?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #0e00d6;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Smallflower</h1>
+      <p class="heading-set__secondary">A Modern Digital Apothecary</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-modo-fuels">
+
+        
+  
+  <img
+      src="https://s3.amazonaws.com/odc-web/news/modo-main.gif?mtime=20180515095036"
+      alt=""
+      class="featured-project__image" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #ea361c;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Modo Fuels</h1>
+      <p class="heading-set__secondary">Smarter Fuels for a Changing World</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-haute-living">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/news/haute-main.jpg?mtime=20180515110029?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/news/haute-main.jpg?mtime=20180515110029?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/news/haute-main.jpg?mtime=20180515110029?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/news/haute-main.jpg?mtime=20180515110029?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/news/haute-main.jpg?mtime=20180515110029?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/news/haute-main.jpg?mtime=20180515110029?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #000000;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Haute Living</h1>
+      <p class="heading-set__secondary">Digital Showroom</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-jllipt">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/news/jllipt-main.jpg?mtime=20180515100055?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/news/jllipt-main.jpg?mtime=20180515100055?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/news/jllipt-main.jpg?mtime=20180515100055?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/news/jllipt-main.jpg?mtime=20180515100055?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/news/jllipt-main.jpg?mtime=20180515100055?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/news/jllipt-main.jpg?mtime=20180515100055?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #e39c28;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">JLL Income Property Trust</h1>
+      <p class="heading-set__secondary">Enduring Wealth</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/work/freeman">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/freeman/freeman_feature_03.png?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/freeman/freeman_feature_03.png?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/freeman/freeman_feature_03.png?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/freeman/freeman_feature_03.png?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/freeman/freeman_feature_03.png?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/freeman/freeman_feature_03.png?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #2ea9d2;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Freeman</h1>
+      <p class="heading-set__secondary">Designing a Content-driven Platform</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/news/featured-project-tortoise-supper-club">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/news/tortoise-main.jpg?mtime=20180515101727?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/news/tortoise-main.jpg?mtime=20180515101727?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/news/tortoise-main.jpg?mtime=20180515101727?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/news/tortoise-main.jpg?mtime=20180515101727?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/news/tortoise-main.jpg?mtime=20180515101727?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/news/tortoise-main.jpg?mtime=20180515101727?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #831e26;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Tortoise Supper Club</h1>
+      <p class="heading-set__secondary">Dine well. Dine Together.</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/work/indigo">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/indigo/indigo-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/indigo/indigo-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/indigo/indigo-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/indigo/indigo-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/indigo/indigo-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/indigo/indigo-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #f1553f;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Indigo Agriculture</h1>
+      <p class="heading-set__secondary">A Fresh Face for Biotech</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/work/field-notes">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/field-notes/field-notes-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/field-notes/field-notes-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/field-notes/field-notes-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/field-notes/field-notes-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/field-notes/field-notes-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/field-notes/field-notes-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #c2451a;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Field Notes</h1>
+      <p class="heading-set__secondary">Digital Updates for an Analog Classic</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/work/hines">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/hines/hines-featured-02c.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/hines/hines-featured-02c.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/hines/hines-featured-02c.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/hines/hines-featured-02c.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/hines/hines-featured-02c.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/hines/hines-featured-02c.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #273845;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">Hines</h1>
+      <p class="heading-set__secondary">Investing in Digital Brand Building</p>
+    </div>
+  </div>
+</a>      <a class="featured-project " href="https://onedesigncompany.com/work/the-eastman-egg-company">
+
+        
+  
+  <img
+      alt=""
+      class="lazyload featured-project__image"
+      data-sizes="auto"
+      data-srcset="https://onedesign.imgix.net/work/the-eastman-egg-company/eastman-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=500 500w,
+              https://onedesign.imgix.net/work/the-eastman-egg-company/eastman-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=600 600w,
+              https://onedesign.imgix.net/work/the-eastman-egg-company/eastman-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=900 900w,
+              https://onedesign.imgix.net/work/the-eastman-egg-company/eastman-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1200 1200w,
+              https://onedesign.imgix.net/work/the-eastman-egg-company/eastman-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1500 1500w,
+              https://onedesign.imgix.net/work/the-eastman-egg-company/eastman-featured.jpg?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=99&w=1800 1800w" />
+  <div class="featured-project__description">
+    <div class="featured-project__description__bg" style="background-color: #deb500;"></div>
+    <div class="heading-set heading-set--on-dark ">
+      <h1 class="heading-set__primary">The Eastman Egg Company</h1>
+      <p class="heading-set__secondary">Making Mornings Memorable</p>
+    </div>
+  </div>
+</a>  </section>
+  <section class="l-section-divider-content l-section-divider-content--alt">
+    <a href="/work" title="More Work" class="outline-button">More Work</a>
+  </section>
+  
+  
+<section class="l-home-clients">
+  <div class="l-home-clients__content">
+    <div class="heading-set">
+      <h1 class="heading-set__primary">Our Clients</h1>
+      <p class="heading-set__secondary">No challenge too big. No detail too small.</p>
+    </div>
+
+    <div class="markdown-block">
+      <p>We’ve created award-winning experiences and respected brands for scrappy startups and Fortune 500 companies alike. Big picture vision meets serious detail-sweating at every point of a project.</p>
+
+    </div>
+
+    <div class="caption">
+      <h2 class="caption__heading">Some industries we’ve worked in</h2>
+      <p class="caption__body">Education   |   Architecture, Construction &amp; Engineering   |   Beer, Wine &amp; Spirits   |   Hospitality</p>
+    </div>
+  </div>
+
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_good.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_groupon.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_aiga.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_ddb.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_university-of-chicago.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_nbc.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_coudal.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_pitchfork.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_pepper.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_3-floyds.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_university-of-pittsburgh.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_the-private-bank.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_patron.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_parce-rum.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+      <div class="client-block">
+      <img src="https://onedesign.imgix.net/clients/clients_pritzker-group.svg?mtime=20170105123058?auto=format&fit=max&foo=&h=&ixlib=php-1.1.0&q=100&w=1800" alt="">
+    </div>
+  </section>  <section class="l-home-services">
+  <div class="heading-set heading-set--on-dark">
+    <h1 class="heading-set__primary">Our Services</h1>
+  </div>
+  
+      <div class="l-home-services__service">
+      <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg-services-design" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<g>
+	<path fill="none" stroke="#0085A1" stroke-width="4" stroke-miterlimit="10" d="M120,110c0,2.2-1.8,4-4,4H35c-2.2,0-4-1.8-4-4V42
+		c0-2.2,1.8-4,4-4h81c2.2,0,4,1.8,4,4V110z"/>
+</g>
+<rect x="38" y="63" fill="#0085A1" width="30" height="44"/>
+<g>
+	<path fill="none" stroke="#0085A1" stroke-width="3" stroke-miterlimit="10" d="M48.5,51c0,2.5-2,4.5-4.5,4.5c-2.5,0-4.5-2-4.5-4.5
+		s2-4.5,4.5-4.5C46.5,46.5,48.5,48.5,48.5,51z"/>
+</g>
+<rect x="74" y="63" fill="#0085A1" width="39" height="19"/>
+<rect x="74" y="89" fill="#0085A1" width="16" height="18"/>
+<path fill="none" stroke="#0085A1" stroke-width="3" stroke-miterlimit="10" d="M111.5,54c0,0.3-0.2,0.5-0.5,0.5H58
+	c-0.3,0-0.5-0.2-0.5-0.5v-6c0-0.3,0.2-0.5,0.5-0.5h53c0.3,0,0.5,0.2,0.5,0.5V54z"/>
+<rect x="96" y="89" fill="#0085A1" width="17" height="18"/>
+</svg>
+
+      <div class="caption caption--on-dark">
+        <h2 class="caption__heading">Web &amp; Interactive Design</h2>
+        <p class="caption__body">Exceptional websites and app experiences are a blend of the right message and the right technology. Our interactive design approach focuses on usability, impact, and achieving results.</p>
+      </div>
+    </div>
+      <div class="l-home-services__service">
+      <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg-services-branding" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<path fill="#B2DAE3" d="M104.9,66.4c-2.4,10.1-9.8,18.2-19.5,21.5c0.5,2.2,0.8,4.6,0.8,7c0,9.2-4.1,17.4-10.6,22.9
+	c5.2,4.5,12,7.2,19.5,7.2c16.6,0,30.1-13.5,30.1-30.1C125.2,81.7,116.7,70.5,104.9,66.4z"/>
+<path fill="#B2DAE3" d="M75.6,71.9c-4.8,4.1-8.3,9.6-9.8,16c3.1,1.1,6.4,1.6,9.8,1.6c3.4,0,6.7-0.6,9.8-1.6
+	C83.9,81.6,80.4,76,75.6,71.9z"/>
+<circle fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="56.1" cy="94.9" r="30.1"/>
+<circle fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="95.1" cy="94.9" r="30.1"/>
+<circle fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="75.6" cy="59.5" r="30.1"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="26" y1="94.9" x2="48.4" y2="72.4"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="27.7" y1="105" x2="53.1" y2="79.6"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="31.8" y1="112.7" x2="59.6" y2="84.9"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="37.7" y1="118.7" x2="65.2" y2="91.2"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="45.3" y1="122.9" x2="65.9" y2="102.3"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="55" y1="125" x2="69.4" y2="110.6"/>
+</svg>
+
+      <div class="caption caption--on-dark">
+        <h2 class="caption__heading">Branding &amp; Strategy</h2>
+        <p class="caption__body">Whether a new or established business or organization, you can look to us to best articulate who you are, what you do, and most importantly, why any of it matters – beautifully.</p>
+      </div>
+    </div>
+      <div class="l-home-services__service">
+      <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg-services-development" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="150px" height="150px" viewBox="0 0 150 150" enable-background="new 0 0 150 150" xml:space="preserve">
+<polygon fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	83,77 50,77 50.1,61 83.1,61 "/>
+<polygon fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	83,106 50,106 50.1,90 83.1,90 "/>
+<polygon fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	129.9,106 97,106 97.1,90 130,90 "/>
+<polygon fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	77.1,36.5 66.6,46.9 56.1,36.5 66.6,26 "/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="67" y1="46" x2="67" y2="60"/>
+<polyline fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="
+	48,69 26,69 26,98 49,98 "/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="84" y1="98" x2="97" y2="98"/>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="84" y1="69" x2="96" y2="69"/>
+<g>
+	<path fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M110,69.5c0,3.6-2.9,6.5-6.5,6.5S97,73.1,97,69.5s2.9-6.5,6.5-6.5S110,65.9,110,69.5z"/>
+</g>
+<line fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="67" y1="107" x2="67" y2="119"/>
+<g>
+	<path fill="none" stroke="#0085A1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+		M66.5,133c-3.6,0-6.5-2.9-6.5-6.5s2.9-6.5,6.5-6.5c3.6,0,6.5,2.9,6.5,6.5S70.1,133,66.5,133z"/>
+</g>
+<line fill="none" stroke="#B2DAE3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="60" y1="69" x2="73" y2="69"/>
+<line fill="none" stroke="#B2DAE3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="60" y1="98" x2="73" y2="98"/>
+<line fill="none" stroke="#B2DAE3" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" x1="107" y1="98" x2="121" y2="98"/>
+</svg>
+
+      <div class="caption caption--on-dark">
+        <h2 class="caption__heading">Web &amp; Application Development</h2>
+        <p class="caption__body">The best-planned experience is wasted without a top-notch implementation. We craft supremely functional websites and applications engineered for stability, performance, and long-term adaptability.</p>
+      </div>
+    </div>
+  
+</section>
+    
+
+          
+<footer class="l-footer">
+
+    <div class="l-footer__left">
+            
+      <a href="https://onedesigncompany.com/news/featured-project-unread" class="footer-callout">
+        <div class="footer-callout__burst">
+          <?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg-footer-callout-burst" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 x="0px" y="0px" width="207px" height="207px" viewBox="0 0 207 207" enable-background="new 0 0 207 207" xml:space="preserve">
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="102.8" y1="16.4" x2="103.1" y2="3.4"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="76" y1="20.7" x2="72.2" y2="8.3"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="51.7" y1="33" x2="44.3" y2="22.5"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="32.5" y1="52.2" x2="22.2" y2="44.6"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="20.2" y1="76.4" x2="8" y2="72.5"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="15.9" y1="103.3" x2="3.1" y2="103.4"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="20.2" y1="130.1" x2="8" y2="134.3"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="32.5" y1="154.3" x2="22.2" y2="162.1"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="51.7" y1="173.6" x2="44.3" y2="184.2"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="76" y1="185.9" x2="72.2" y2="198.4"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="102.8" y1="190.2" x2="103.1" y2="203.3"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="129.7" y1="185.9" x2="134" y2="198.4"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="153.9" y1="173.6" x2="161.8" y2="184.2"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="173.1" y1="154.3" x2="184" y2="162.1"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="185.4" y1="130.1" x2="198.2" y2="134.3"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="189.7" y1="103.3" x2="203.1" y2="103.4"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="185.4" y1="76.4" x2="198.2" y2="72.5"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="173.1" y1="52.2" x2="184" y2="44.6"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="153.9" y1="33" x2="161.8" y2="22.5"/>
+<line opacity="0.3" fill="none" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" x1="129.7" y1="20.7" x2="134" y2="8.3"/>
+</svg>
+        </div>
+        <div class="footer-callout__image">
+          <img src="https://onedesign.imgix.net/news/11-119A8082.jpg?mtime=20190409214534?auto=format&fit=crop&foo=&h=350&ixlib=php-1.1.0&q=99&w=350" alt="Unread Vol. 1">
+        </div>
+        <div class="footer-callout__details">
+          <h1 class="footer-callout__details__heading">What&rsquo;s Happening</h1>
+          <p class="footer-callout__details__title">Unread Vol. 1</p>
+        </div>
+      </a>
+
+      <div class="newsletter-signup">
+        <p class="newsletter-signup__description"><a href="/weekly">One Weekly:</a> The week&rsquo;s best design &amp; tech resources straight to your inbox.</p>
+                
+
+
+  
+
+<form action="//onedesigncompany.us3.list-manage.com/subscribe/post?u=28ee62eb4d2a140104295da6f&amp;id=c0f3ca5d9c&amp;LOCATION=Footer&amp;c=?" class="newsletter-signup__form " method=post>
+  <div class="input-set input-set--text js-input-set">
+    <div class="input-set__input-wrapper">
+      <input id="weekly-subscribe" type="email" name="EMAIL" class="text-input js-primary-form-input " placeholder="Your Email Address&hellip;">
+    </div>
+    <input type="submit" value="Subscribe" name="subscribe" class="submit-button-square js-primary-form-submit">
+  </div>
+
+  
+  <div class="newsletter-signup__response">
+    <div class="js-response-success is-not-displayed">Thanks for signing up!</div>
+    <div class="js-response-error is-not-displayed">Something went wrong. Try again.</div>
+  </div>
+
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_28ee62eb4d2a140104295da6f_c0f3ca5d9c" tabindex="-1" value=""></div>
+</form>
+
+      </div>
+    </div>
+
+    <div class="l-footer__center">
+      <a href="https://onedesign.typeform.com/to/DmFpUp"
+        class="footer-contact-link js-track-analytics-event"
+        target="_blank"
+        data-analytics-event-category="Project Planner"
+        data-analytics-event-action="Footer Project Planner Link Clicked">
+        Want to learn more? <span>Get in Touch</span>
+      </a>
+
+      <div class="link-list link-list--footer">
+        <div class="heading-set heading-set--link-list">
+          <h1 class="heading-set__primary">Our Services</h1>
+        </div>
+        <ul>
+                      <li><a href="https://onedesigncompany.com/services/web-interactive-design#website-design">Website Design</a></li>
+                      <li><a href="https://onedesigncompany.com/services/web-interactive-design#web-application-design">Web Application Design</a></li>
+                      <li><a href="https://onedesigncompany.com/services/branding-strategy">Branding &amp; Strategy</a></li>
+                      <li><a href="https://onedesigncompany.com/services/branding-strategy#logo-identity-design">Logo &amp; Identity Systems</a></li>
+                      <li><a href="https://onedesigncompany.com/social">Social</a></li>
+                      <li><a href="https://onedesigncompany.com/services/web-application-development#front-and-backend-web-development">Front and Backend Web Development</a></li>
+                      <li><a href="https://onedesigncompany.com/services/web-application-development#ios-iphone-ipad-development">iOS (iPhone &amp; iPad) Development</a></li>
+                      <li><a href="https://onedesigncompany.com/services/web-application-development#android-development">Android Development</a></li>
+                      <li><a href="https://onedesigncompany.com/services/web-application-development#api-integrations">API Integrations</a></li>
+                  </ul>
+      </div>
+    </div>
+
+    <div class="l-footer__right">
+
+      <a href="/" class="odc-logo-link odc-logo-link--footer">
+        <img src="/images/odc-linked_odc-logo-white.svg" alt="One Design Company">
+      </a>
+
+      <div class="contact-info contact-info--footer">
+        <p><strong>One Design Company</strong></p>
+        <p>230 W Superior, Suite 700</p>
+        <p>Chicago, Illinois 60654</p>
+        <p><strong>T</strong> 312 602 3335</p>
+        <p><strong>F</strong> 888 425 8136</p>
+        <p><strong>E</strong> <a href="mailto:info@onedesigncompany.com">info@onedesigncompany.com</a></p>
+
+        <div class="contact-info__careers">
+          <p>
+            <strong>Jobs at One:</strong> <a href="http://one-design-company.workable.com"
+              class="js-track-analytics-event"
+              data-analytics-event-category="Careers"
+              data-analytics-event-action="Footer Careers Link Clicked">
+              View Open Positions
+            </a>
+          </p>
+        </div>
+      </div>
+
+        <a href="https://twitter.com/onedesignco" class="social-link social-link--twitter social-link--on-dark">Twitter</a>
+  <a href="https://www.facebook.com/onedesigncompany" class="social-link social-link--facebook social-link--on-dark">Facebook</a>
+  <a href="http://instagram.com/onedesignco" class="social-link social-link--instagram social-link--on-dark">Instagram</a>
+  <a href="https://vimeo.com/onedesigncompany" class="social-link social-link--vimeo social-link--on-dark">Vimeo</a>
+    </div>
+
+</footer>      </div>
+
+    <link rel="stylesheet" href="//cloud.typography.com/699012/777304/css/fonts.css">
+
+    
+    <script defer src="./styles/main.js"></script>
+  <script defer src="./styles/main2.js"></script>
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-1429854-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+
+
+    </body>
+</html>

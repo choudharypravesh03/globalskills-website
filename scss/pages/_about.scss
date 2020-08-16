@@ -1,0 +1,55 @@
+.team-section {
+    h2 {
+        margin-bottom: 50px;
+    }
+    .colmn-box {
+        width: 31.33%;
+        padding: 30px;
+        margin-top: 40px;
+        -webkit-box-shadow: 0px 0px 20px rgba($color-black, 0.15);
+        box-shadow: 0px 0px 20px rgba($color-black, 0.15);
+        margin-right: 3%;
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+        figure {
+            img {
+                border-radius: 50%;
+            }
+        }
+        h6 {
+            margin: 15px 0 5px;
+        }
+        p {
+            color: $color-heading;
+        }
+    }
+    @include breakpoint(xmedium) {
+        h2 {
+            margin-bottom: 20px;
+        }
+    }
+    @include breakpoint(medium) {
+        .flex {
+            -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+        }
+        .colmn-box {
+            width: 48%;
+            padding: 20px 15px;
+            margin-right: 0;
+            h4 {
+                font-size: 14px;
+            }
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+    @include breakpoint(xsml) {
+        .colmn-box {
+            width: 100%;
+        }
+    }
+}

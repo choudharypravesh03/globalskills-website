@@ -1,0 +1,315 @@
+/*----------------------------
+    1. Place holder
+-----------*/
+
+%clearfix {
+    &:after,
+    &:before {
+        content: '';
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+%cubic-transition-5s {
+    transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -moz-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -webkit-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -o-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+    -ms-transition: all .5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+%transition {
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+%transition-2s {
+    transition: all .25s linear;
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    -o-transition: all .25s linear;
+}
+
+%appearance {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+%border-none {
+    border: none;
+}
+
+%center-text {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+%center-text-both {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translateY(-50%, -50%);
+    z-index: 1;
+}
+
+%heading-zero-margin {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+    }
+}
+
+%box-reset-padding {
+    &.npd {
+        padding: 0;
+    }
+    &.npt {
+        padding-top: 0;
+    }
+    &.npb {
+        padding-bottom: 0;
+    }
+    &.npl {
+        padding-left: 0;
+    }
+    &.npr {
+        padding-right: 0;
+    }
+}
+
+%box-reset-margin {
+    &.nm {
+        margin: 0;
+    }
+    &.nmt {
+        margin-top: 0;
+    }
+    &.nmb {
+        margin-bottom: 0;
+    }
+    &.nml {
+        margin-left: 0;
+    }
+    &.nmr {
+        margin-right: 0;
+    }
+}
+
+%gradient-gray {
+    background: rgba(54, 54, 54, 1);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(54, 54, 54, 1)), color-stop(100%, rgba(150, 150, 150, 1)));
+    background: linear-gradient(45deg, rgba(54, 54, 54, 1) 0%, rgba(150, 150, 150, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363636', endColorstr='#969696', GradientType=1);
+}
+
+// %bg-colors {
+//   &.white {
+//     background: $color-white;
+//   }
+//   &.grey {
+//     background: $color-black;
+//   }
+// }
+/*----------------------------
+    2. Mixins
+-----------*/
+
+@mixin overlay($bg, $op, $z) {
+    background: rgba($bg, $op);
+    z-index: $z;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+}
+
+@mixin center($position) {
+    position: absolute;
+    @if $position=='vertical' {
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+    @else if $position=='horizontal' {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translate(-50%);
+    }
+    @else if $position=='both' {
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin vertical-align($position, $top) {
+    @extend %center-text;
+    position: $position;
+    top: $top;
+}
+
+@mixin height($height) {
+    height: $height;
+}
+
+@mixin max-width($w) {
+    max-width: $w;
+}
+
+@mixin min-width($min) {
+    min-width: $min;
+}
+
+@mixin radius($r) {
+    border-radius: $r;
+}
+
+@mixin min-width($wid) {
+    min-width: $wid;
+}
+
+@mixin translate($value, $dir) {
+    @if $dir==transy {
+        transform: translateY($value);
+        -webkit-transform: translateY($value);
+        -moz-transform: translateY($value);
+        -ms-transform: translateY($value);
+        -o-transform: translateY($value);
+    }
+    @else if $dir==transx {
+        transform: translateX($value);
+        -webkit-transform: translateX($value);
+        -moz-transform: translateX($value);
+        -ms-transform: translateX($value);
+        -o-transform: translateX($value);
+    }
+    @else if $dir==rot {
+        transform: rotate($value);
+        -webkit-transform: rotate($value);
+        -moz-transform: rotate($value);
+        -ms-transform: rotate($value);
+        -o-transform: rotate($value);
+    }
+    @else if $dir==scle {
+        transform: scale($value);
+        -webkit-transform: scale($value);
+        -moz-transform: scale($value);
+        -ms-transform: scale($value);
+        -o-transform: scale($value);
+    }
+    @else if $dir==skew {
+        transform: skewX($value);
+        -webkit-transform: skewX($value);
+        -moz-transform: skewX($value);
+        -ms-transform: skewX($value);
+        -o-transform: skewX($value);
+    }
+}
+
+// Transition
+@mixin transition($args...) {
+    -webkit-transition: $args;
+    transition: $args;
+}
+
+@mixin font-weight($weight) {
+    $weights: ( thin: 100, extra-light: 200, ultra-light: 200, light: 300, normal: 400, book: 400, regular: 400, medium: 500, semi-bold: 600, demi-bold: 600, bold: 700, extra-bold: 800, ultra-bold: 900, heavy: 900, black: 900, ultra: 900, ultra-black: 900, extra-ultra: 900);
+}
+
+// Columns
+@mixin rowMachine($row, $margin, $marginBtm) {
+    width: ((100% - (($row - 1) * $margin)) / $row);
+    &:nth-child(n) {
+        margin-bottom: $marginBtm;
+        margin-right: $margin;
+    }
+    &:nth-child(#{$row}n) {
+        margin-right: 0;
+    }
+}
+
+@mixin hover-state {
+    &:active,
+    &:focus,
+    &:hover {
+        @content;
+    }
+}
+
+// _mixins.scss
+@mixin breakpoint($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: #{map-get($breakpoints, $breakpoint)}) {
+            @content;
+        }
+    }
+    @else {
+        @warn"Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+// @mixin breakpoint($class) {
+//    @if $class == mobile{
+//     @media (max-width: 767px) {
+//        @content;
+//     }
+//   }
+//   @else if $class == tablet {
+//      @media (min-width: 768px){
+//       @content;
+//     }
+//   }
+//   @else if $class == md {
+//      @media (min-width: 1024px){
+//       @content;
+//     }
+//   }
+//   @else if $class == lg {
+//      @media (min-width: 1200px){
+//       @content;
+//     }
+//   }
+//   @else if $class == xlg {
+//      @media (min-width: 1441px){
+//       @content;
+//     }
+//   }
+//   @else {
+//      @warn"Breakpoint mixin supports: xs, sm, md, lg";
+//   }
+// }
+@function setColor($scheme, $tone) {
+    @return map-get(map-get($colourscheme, $scheme), $tone);
+}
+
+@function fontSize($size, $screen) {
+    @return map-get(map-get($fontSizes, $size), $screen);
+}
+
+@function Spacing($spacingSize, $direction) {
+    @return map-get(map-get($spacings, $spacingSize), $direction);
+}

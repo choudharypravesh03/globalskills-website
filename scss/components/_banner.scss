@@ -1,0 +1,141 @@
+.banner-section {
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 280px;
+    padding-bottom: 80px;
+    &:after {
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 81, 235, 0.49);
+        background: radial-gradient(ellipse at center, rgba(10, 81, 235, 0.49) 0%, rgba(10, 59, 235, 0.77) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0a51eb', endColorstr='#0a3beb', GradientType=1);
+        z-index: -1;
+    }
+    .banner-text {
+        width: 450px;
+        &-lg {
+            width: 500px;
+        }
+        h1 {
+            font-family: $font-product-medium;
+            font-weight: 500;
+        }
+        p {
+            font-size: $font-size-lg;
+            letter-spacing: 0.5px;
+            padding: 30px 0 50px;
+            font-family: $font-product-light;
+        }
+        li {
+            list-style: none;
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: middle;
+            a {
+                text-decoration: none;
+            }
+            &:last-of-type {
+                border-bottom: solid 1px $color-white;
+                padding-bottom: 5px;
+            }
+        }
+    }
+    .trusted-section {
+        padding-top: 180px;
+        p {
+            font-size: $font-size-sm;
+            color: rgba($color-white, 0.5);
+        }
+        ul {
+            display: inline-block;
+            margin-top: 20px;
+            li {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0px 15px;
+            }
+            @include breakpoint(xmedium) {
+                font-size: 0;
+                li {
+                    width: 20%;
+                }
+            }
+        }
+    }
+    &.inner-banner {
+        padding: 240px 0 200px;
+        .banner-text {
+            p {
+                padding-top: 10px;
+                padding-bottom: 0;
+            }
+        }
+        @include breakpoint(xmedium) {
+            padding: 150px 0;
+        }
+    }
+    @include breakpoint(xlarge) {
+        padding-top: 200px;
+        .trusted-section {
+            padding-top: 100px;
+        }
+    }
+    @include breakpoint(medium) {
+        background-position: center bottom;
+        &.inner-banner {
+            .banner-text {
+                text-align: left;
+            }
+        }
+        .banner-text {
+            width: 100%;
+            text-align: center;
+            h1 {
+                font-size: 34px;
+            }
+            p {
+                font-size: 16px;
+                padding-top: 10px;
+                padding-bottom: 30px;
+            }
+        }
+        .trusted-section {
+            ul {
+                margin-top: 0;
+                li {
+                    width: 50%;
+                    margin-top: 20PX;
+                }
+            }
+        }
+    }
+    @include breakpoint(xsml) {
+        .banner-text {
+            ul {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-orient: vertical;
+                -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                justify-content: center;
+            }
+            li {
+                width: auto;
+                margin: 0 0 10px;
+            }
+        }
+    }
+}
